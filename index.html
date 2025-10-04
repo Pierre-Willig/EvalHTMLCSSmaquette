@@ -7,6 +7,21 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <title>Eval Maquette</title>
+    <style>
+    @keyframes myAnimation {
+        0%   { border-color: red; }
+        25%  { border-color: blue; }
+        50%  { border-color: yellow; }
+        75%  { border-color: green; }
+        100% { border-color: red; }
+    }          
+    
+    .animate {
+        animation: myAnimation 2s infinite linear;
+        border: 3px dashed;
+    }
+	        
+    </style>
 </head>
 <body>
     
@@ -21,7 +36,7 @@
             </div>
             <div class="row">
                 <div class="col"></div>
-                <p class="col col-3 fw-light text-secondary justify-content-end text-end">Entreprise XXXXXXXXX | N° Siret 0000000000</p>
+                <p class="col col-lg-3 fw-light text-secondary justify-content-end text-end">Entreprise XXXXXXXXX | N° Siret 0000000000</p>
             </div>
             
 
@@ -46,12 +61,12 @@
         
         <main class="container">
             <section class="row">
-                <h1 class="col col-6"><strong>Bienvenue Entreprise XXXXXXXX</strong></h1>
-                <aside class="col col-6 text-secondary align-self-center"><em>Dernière connexion : le <time datetime="2014-03-10">10/03/2014</date> à <time datetime="14:08">14:08</time>.</em></aside>
+                <h1 class="col col-lg-6 col-md-12"><strong>Bienvenue Entreprise XXXXXXXX</strong></h1>
+                <aside class="col col-lg-6 col-md-12 text-secondary align-self-center"><em>Dernière connexion : le <time datetime="2014-03-10">10/03/2014</date> à <time datetime="14:08">14:08</time>.</em></aside>
             </section>
             
             <div class="row m-0">
-                <section class="col col-6 border border-3 border-black p-2">
+                <section class="col col-lg-6 col-md-12 border border-3 border-black p-2">
                     <article class="d-flex flex-column gap-2">
                         <h2><i class="bi bi-pin-angle-fill fs-1"></i><strong>Coordonnées</strong></h2>
                         <p><i class="bi bi-hash fs-3"></i> <strong>SIRET</strong> : 0000000000000</p>
@@ -68,13 +83,13 @@
                 </section>
                     
                     
-                <div class="col col-6">
+                <div class="col col-lg-6 col-md-12">
                     <div class="row pb-1">
                         <section>
-                            <article class="border border-3 border-black p-1">
+                            <article class="animate p-1">
                                 <div class="row">
-                                    <span class="col col-2 text-center"><i class="bi bi-exclamation-triangle fs-1 text-danger"></i><h2>Urgent</h2></span>
-                                    <p class="col col-10 align-self-center">Il ne vous reste que 3 jours pour remplir la déclaration nominative annuelle des salaires (DNAS)
+                                    <span class="col col-lg-2 col-md-4 text-center"><i class="bi bi-exclamation-triangle fs-1 text-danger"></i><h2>Urgent</h2></span>
+                                    <p class="col col-lg-10 col-md-8 align-self-center">Il ne vous reste que 3 jours pour remplir la déclaration nominative annuelle des salaires (DNAS)
                                         Pour faire votre déclaration, <a href="#">cliquez ici</a>.
                                     </p>
                                 </div>
@@ -83,7 +98,7 @@
                     </div>   
 
                     <div class="row m-0">  
-                        <section class="col col-4 align-content-center border border-3 border-black p-2">
+                        <section class="col col-lg-4 col-md-12 align-content-center border border-3 border-black p-2">
                             <article class="text-center">
                                 <h2><strong>Messagerie</strong></h2>
                                 <i class="bi bi-envelope-fill fs-1"></i>
@@ -91,12 +106,12 @@
                             </article>
                         </section>
                         
-                        <section class="col col-8 p-0 ps-1">
+                        <section class="col col-lg-8 col-md-12 p-0 ps-1">
                             <article class="border border-3 border-black p-2">
                                 <h2><strong>Contact PRO BTP</strong></h2>
-                                <p><img src="images/person.png" alt=""><strong>Votre conseiller : JEAN DUPONT</strong></p>
-                                <p><img src="images/phone_big.png" alt=""><strong>04 04 04 04 04</strong></p>
-                                <p><img src="images/mail.png" alt=""><a href="mailto:">Envoyer un e-mail à mon conseiller</a></p>
+                                <p><i class="bi bi-person-fill fs-3"></i><strong> Votre conseiller : JEAN DUPONT</strong></p>
+                                <p><i class="bi bi-telephone-fill fs-3"></i><strong> 04 04 04 04 04</strong></p>
+                                <p><i class="bi bi-envelope-fill fs-3"></i> <a href="mailto:">Envoyer un e-mail à mon conseiller</a></p>
                             </article>
                         </section>
                     </div>
@@ -104,7 +119,7 @@
             </div>   
 
             <div class="row m-0 mt-1">
-                <section class="col col-6 border border-3 border-black">
+                <section class="col col-lg-6 col-md-12 border border-3 border-black">
                     <article class="">
                         <h2><i class="bi bi-flag"></i><strong>Dernières Opérations</strong></h2>
                         <table class="table table-bordered table-striped">
@@ -165,7 +180,7 @@
                     </article>
                 </section>
                 
-                <div class="col col-6">
+                <div class="col col-lg-6 col-md-12">
                     <section class="border border-3 border-black p-2 d-flex flex-column gap-2">
                         <h2><i class="bi bi-lightning-fill"></i><strong>IMPORTANT</strong></h2>
                         <article>
