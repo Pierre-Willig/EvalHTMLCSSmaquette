@@ -183,6 +183,7 @@ nav ul li:hover {
     height: 100%;
     padding: 0 2%;
     animation: myAnimation 2s infinite linear;
+    border-radius: 1rem;
 }
 
 @keyframes myAnimation {
