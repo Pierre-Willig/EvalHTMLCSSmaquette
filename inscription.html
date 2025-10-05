@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style-connect.css">
 </head>
 <body>
     
@@ -55,15 +56,18 @@
                     </table>
                     <label for="phone">Tél : </label><input type="tel" name="phone" id="phone"> <br>
                     Acceptez vous de recevoir des offres promotionnelles ?
-                    <input type="radio" name="promos" id="no" value="no"> <label for="no" selected> Non</label>
-                    <input type="radio" name="promos" id="yes" value="yes"><label for="yes"> Oui</label>
+                    <div class="input-control">
+                        <input type="radio" name="promos" id="no" value="no"> <label for="no" selected> Non</label>
+                        <input type="radio" name="promos" id="yes" value="yes"><label for="yes"> Oui</label>
+                    </div>
                 </fieldset>
-                <fieldset>
+                <fieldset class="input-group">
                     <legend>Services utilisés :</legend>
-                    <input type="checkbox" name="water" id="water" value="water"><label for="water"> Eau</label>
-                    <input type="checkbox" name="gaz" id="gaz" value="gaz"><label for="gaz"> Gaz</label>
-                    <input type="checkbox" name="elec" id="elec" value="elec"><label for="elec"> Électricité</label>
+                    <div class="input-control"><input type="checkbox" name="water" id="water" value="water"><label for="water"> Eau</label></div>
+                    <div class="input-control"><input type="checkbox" name="gaz" id="gaz" value="gaz"><label for="gaz"> Gaz</label></div>
+                    <div class="input-control"><input type="checkbox" name="elec" id="elec" value="elec"><label for="elec"> Électricité</label></div>
                 </fieldset>
+                <input type="submit" name="submit" id="submit" value="S'inscrire">
             </form>
         </section>
     </main>
