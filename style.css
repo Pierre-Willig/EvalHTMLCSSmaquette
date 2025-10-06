@@ -1,0 +1,13 @@
+    @keyframes myAnimation {
+        0%   { border-color: red; }
+        25%  { border-color: blue; }
+        50%  { border-color: yellow; }
+        75%  { border-color: green; }
+        100% { border-color: red; }
+    }          
+    
+    .animate {
+        animation: myAnimation 2s infinite linear;
+        border: 3px dashed;
+    }
+	        
